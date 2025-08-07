@@ -4213,6 +4213,7 @@ app.index_string = '''
     </body>
 </html>
 '''
+server = app.server  # Required for Google App Engine
 
 if __name__ == '__main__':
     print("\n🔒 SECURE COUNTY SUSTAINABILITY DASHBOARD")
@@ -4276,3 +4277,4 @@ if __name__ == '__main__':
     print("=" * 60)
     
     app.run(debug=True, host='0.0.0.0', port=8050)
+
